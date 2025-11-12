@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joshua Crockett – Portfolio</title>
+  <meta name="description" content="Personal portfolio for Joshua Crockett – Operational Discipline Meets Digital Defense." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d10; --card:#11151a; --ink:#e6edf3; --muted:#9fb3c8; --accent:#64b5f6; --line:#1f2630; --chip:#151b23;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;background:linear-gradient(180deg, rgba(11,13,16,.9), rgba(11,13,16,.65));backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);z-index:40}
+    .wrap{max-width:1040px;margin:auto;padding:22px 20px}
+    .nav{display:flex;align-items:center;gap:18px;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:.2px}
+    .brand span{color:var(--accent)}
+    .cta{display:inline-flex;gap:10px;align-items:center;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--chip)}
+    main{display:grid;gap:42px;padding:34px 0 80px}
+    .hero{display:grid;grid-template-columns:1.4fr .9fr;gap:26px;align-items:center}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+    h1{font-size:38px;margin:0 0 10px}
+    h2{font-size:24px;margin:0 0 10px}
+    p{line-height:1.65;color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .chip{padding:8px 12px;border:1px solid var(--line);background:var(--chip);border-radius:999px;font-size:13px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .proj{display:flex;flex-direction:column;gap:10px}
+    .proj h3{margin:0;font-size:18px}
+    .footer{border-top:1px solid var(--line);color:var(--muted);text-align:center;padding:24px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:linear-gradient(180deg,#151b23,#0f141a)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:13px; color: var(--muted)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">Joshua <span>Crockett</span></div>
+      <nav class="mono">Operational Discipline Meets Digital Defense</nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <h1>Hello, I’m Joshua.</h1>
+        <p>U.S. Navy Electronics Technician transitioning into cybersecurity and technical operations. I design disciplined, secure workflows and build clear documentation, training, and automation that teams can trust.</p>
+        <div class="chips">
+          <div class="chip">GitHub Pages</div>
+          <div class="chip">Python / SQL</div>
+          <div class="chip">Cybersecurity</div>
+          <div class="chip">Process Design</div>
+          <div class="chip">AI + Automation</div>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Quick Links</h2>
+        <p class="mono">Update these to your real profiles.</p>
+        <ul>
+          <li><a href="https://github.com/crockettdjoshua-spec" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="www.linkedin.com/in/crockettdjoshua" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noreferrer">Resume (PDF)</a></li>
+          <li><a href="mailto:Crockettd.joshua@Gmail.com">joshua@example.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="proj card">
+          <h3>IT Asset Inventory Proposal</h3>
+          <p>Formal proposal and implementation plan to catalog and govern devices, software, and licenses—aligned to ISO/NIST principles.</p>
+          <a class="btn" href="#" target="_blank" rel="noreferrer">Read Summary</a>
+        </article>
+        <article class="proj card">
+          <h3>Cybersecurity Internship Syllabus</h3>
+          <p>Six‑month training pathway with modules, deliverables, and peer facilitation for hands‑on GRC and security operations.</p>
+          <a class="btn" href="#" target="_blank" rel="noreferrer">View Outline</a>
+        </article>
+        <article class="proj card">
+          <h3>Automation Scripts (Neon DB + Python)</h3>
+          <p>Operational scripts to ingest data, standardize processes, and reduce manual effort across internal workflows.</p>
+          <a class="btn" href="#" target="_blank" rel="noreferrer">See Repo</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="two">
+      <div class="card">
+        <h2>Skills</h2>
+        <div class="chips">
+          <div class="chip">Git / GitHub</div>
+          <div class="chip">Windows & Linux</div>
+          <div class="chip">ISO 27001 / NIST 800‑53</div>
+          <div class="chip">Docs & SOPs</div>
+          <div class="chip">Customer Support</div>
+          <div class="chip">Azure / MS 365</div>
+        </div>
+      </div>
+      <div class="card" id="contact">
+        <h2>Contact</h2>
+        <p>Open to roles in cybersecurity operations, IT process design, and technical program support.</p>
+        <p class="mono">Email: <a href="mailto:Crockettd.joshua@Gmail.com">joshua@example.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© <span id="y"></span> Joshua Crockett • Built with GitHub Pages</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
